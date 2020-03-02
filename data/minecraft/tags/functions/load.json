@@ -1,0 +1,7 @@
+{
+    "values": [
+        "pkt:base/load",
+        "pkg:base/load",
+        "pks:base/load"
+    ]
+}

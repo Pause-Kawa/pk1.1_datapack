@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        "pkg_nether_travel": {
+            "trigger": "minecraft:nether_travel"
+        }
+    },
+    "rewards": {
+        "function": "pkg:grid/engine/reset_follow_tag"
+    }
+}
