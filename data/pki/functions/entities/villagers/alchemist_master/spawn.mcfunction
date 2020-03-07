@@ -1,0 +1,8 @@
+# Create Alchemist Master  
+execute at @s run summon villager ~ ~ ~ {Tags:["PKI_trigger","PKI_villager_init","alchemist_master"],VillagerData:{profession:cleric,level:99,type:jungle},CustomName:"\"Alchemist Master\"",Offers:{Recipes:[{maxUses:9999999,buy:{id:emerald,Count:4b},buyB:{id:golden_carrot,Count:1b},sell:{id:"minecraft:potion",Count:1b,tag:{CustomPotionColor:8246765,display:{Name:"{\"text\":\"Potion of Teleportation\",\"italic\":false}",Lore:["\"Teleport to your spawnpoint\""]},HideFlags:33,CustomPotionEffects:[{Id:28,Amplifier:3,Duration:1}]}}},{maxUses:9999999,buy:{id:emerald,Count:2b},buyB:{id:chorus_fruit,Count:5b},sell:{id:"minecraft:potion",Count:1b,tag:{CustomPotionColor:8246765,display:{Name:"{\"text\":\"Potion of Teleportation\",\"italic\":false}",Lore:["\"Teleport to your spawnpoint\""]},HideFlags:33,CustomPotionEffects:[{Id:28,Amplifier:3,Duration:1}]}}},{maxUses:9999999,buy:{id:emerald,Count:36b},buyB:{id:paper,Count:1b},sell:{id:"minecraft:globe_banner_pattern",Count:1b,tag:{memorialExcerpt:1b,display:{Name:'{"text":"Memorial Excerpt","color":"yellow","italic":false}',Lore:['{"text":"Throw on the ground"}','{"text":"to memorize an aera"}']},HideFlags:33,Enchantments:[{id:"minecraft:power",lvl:1s}]}}}]}}
+
+# Initialize and replace villager
+team join HiddenName @e[type=villager,tag=PKI_villager_init,tag=alchemist_master,team=!HiddenName]
+execute at @s run scoreboard players set @e[type=villager,tag=PKI_villager_init,tag=alchemist_master,distance=..1] PKIamRewarded 0
+execute at @s run particle minecraft:dragon_breath ~ ~ ~ 1 1 1 0.01 200
+tp @s ~ -1000 ~

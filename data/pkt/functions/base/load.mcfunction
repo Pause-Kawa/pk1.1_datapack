@@ -7,6 +7,8 @@
 #   %PK_parameters_<parameter> : parameters of the datapack - <parameter> : string
 #   %PKT_temp_<x> : used for temporary operations - <x> : integer
 #   %PKT_RNG_<x> : used for RNG purposes - <x> : integer (1 to 2)
+team add HiddenName
+team modify HiddenName nametagVisibility never
 scoreboard objectives add value dummy
 # Constants :
 scoreboard players set %PKT_const_100 value 100

@@ -2,6 +2,6 @@
     "values": [
         "pkt:base/tick",
         "pkg:base/tick",
-        "pks:base/tick"
+        "pki:base/tick"
     ]
 }
