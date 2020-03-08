@@ -1,0 +1,1 @@
+kill @e[type=area_effect_cloud,tag=PKS_spawner,tag=badlands_fortress,dx=44,dy=31,dz=44]

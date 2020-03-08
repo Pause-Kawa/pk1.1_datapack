@@ -1,0 +1,2 @@
+execute unless entity @s[tag=has_target] if entity @p[distance=..5] run function pks:entities/ancient_stray_soldiers/polar_bear_mount/find_target
+execute if entity @s[tag=has_target] if entity @p[distance=10..] run tag @s remove has_target

@@ -1,1 +1,0 @@
-execute if entity @s[tag=model_one] run function pks:structures/jungle/pillar/model_one/generate

@@ -1,0 +1,1 @@
+execute if entity @s[tag=model_one] run function pks:structures/badlands/fortress/engine/model_one/generate

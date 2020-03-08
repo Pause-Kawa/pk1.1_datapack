@@ -1,0 +1,1 @@
+summon minecraft:vindicator ~ ~ ~ {Tags:["raider"],HandItems:[{id:"minecraft:iron_axe",Count:1b},{}]}
