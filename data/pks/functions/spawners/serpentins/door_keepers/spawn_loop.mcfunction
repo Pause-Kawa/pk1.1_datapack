@@ -1,5 +1,5 @@
 # Spawn a random type of serpentin
-function pkt:randomizer/next
+function pkt:randomizer/next1
 execute if score %PKT_RNG_1 value matches ..450 run function pks:entities/serpentins/spawn/archer
 execute if score %PKT_RNG_1 value matches 451..750 run function pks:entities/serpentins/spawn/swordsman
 execute if score %PKT_RNG_1 value matches 751.. run function pks:entities/serpentins/spawn/serpentin_door_keeper

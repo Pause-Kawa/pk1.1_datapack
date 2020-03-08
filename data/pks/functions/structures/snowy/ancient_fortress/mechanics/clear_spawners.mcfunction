@@ -1,0 +1,1 @@
+kill @e[type=area_effect_cloud,tag=PKS_trigger,tag=ancient_fortress,dx=50,dy=37,dz=50]

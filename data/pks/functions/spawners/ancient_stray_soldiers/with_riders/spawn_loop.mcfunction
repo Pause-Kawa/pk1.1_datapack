@@ -1,5 +1,5 @@
 # Spawn a random type of raider
-function pkt:randomizer/next
+function pkt:randomizer/next1
 execute if score %PKT_RNG_1 value matches ..350 run function pks:entities/ancient_stray_soldiers/spawn/axe_handler
 execute if score %PKT_RNG_1 value matches 351..700 run function pks:entities/ancient_stray_soldiers/spawn/archer
 execute if score %PKT_RNG_1 value matches 701.. run function pks:entities/ancient_stray_soldiers/spawn/polar_bear_rider

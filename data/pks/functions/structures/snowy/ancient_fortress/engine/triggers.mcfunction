@@ -1,0 +1,2 @@
+# Clear spawners if no firework pillager is found up to 10 blocks (horizontal check) around the structure
+execute at @s positioned ~-10 ~ ~-10 unless entity @e[type=stray,tag=tower_guard,dx=50,dy=37,dz=50] run function pks:structures/snowy/ancient_fortress/mechanics/clear_spawners
