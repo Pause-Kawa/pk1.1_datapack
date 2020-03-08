@@ -1,0 +1,91 @@
+{
+    "type": "chest",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:feather",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1.0,
+                                "max": 2.0,
+                                "type": "minecraft:uniform"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:writable_book",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1.0,
+                                "max": 2.0,
+                                "type": "minecraft:uniform"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:ink_sac",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 2.0,
+                                "max": 4.0,
+                                "type": "minecraft:uniform"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 30,
+                    "functions": [
+                        {
+                            "function": "minecraft:enchant_with_levels",
+                            "levels": {
+                                "min": 10.0,
+                                "max": 30.0,
+                                "type": "minecraft:uniform"
+                            },
+                            "treasure": true
+                        }
+                    ],
+                    "name": "minecraft:book"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 30,
+                    "name": "minecraft:map"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 40,
+                    "name": "minecraft:compass"
+                }
+            ]
+        }
+    ]
+}

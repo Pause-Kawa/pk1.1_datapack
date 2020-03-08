@@ -1,0 +1,72 @@
+{
+    "type": "chest",
+    "pools": [
+        {
+            "rolls": {
+                "min": 1,
+                "max": 2
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "functions": [
+                        {
+                            "function": "minecraft:enchant_with_levels",
+                            "levels": 30.0,
+                            "treasure": true
+                        }
+                    ],
+                    "name": "minecraft:book"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:leather_boots",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1.0
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{springBoots:1b,display:{color:8991416}}"
+                        },
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "text": "Spring Boots",
+                                "color": "yellow",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                {
+                                    "text": "Sneak then jump to jump higher.",
+                                    "color": "dark_purple",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "Sneak more than two seconds",
+                                    "color": "dark_purple",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "to make a Super jump !",
+                                    "color": "dark_purple",
+                                    "italic": false
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

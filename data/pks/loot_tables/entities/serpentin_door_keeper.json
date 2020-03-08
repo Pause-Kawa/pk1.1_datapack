@@ -1,0 +1,94 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1.0
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{serpentin:1b,deathEvent:1b}"
+                        }
+                    ],
+                    "name": "minecraft:stick"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": -1.0,
+                                "max": 1.0,
+                                "type": "minecraft:uniform"
+                            }
+                        },
+                        {
+                            "function": "minecraft:looting_enchant",
+                            "count": {
+                                "min": 0.0,
+                                "max": 1.0
+                            }
+                        }
+                    ],
+                    "name": "minecraft:leather"
+                }
+            ]
+        },
+        {
+            "type": "entity",
+            "pools": [
+                {
+                    "rolls": 1,
+                    "entries": [
+                        {
+                            "type": "item",
+                            "weight": 1,
+                            "name": "minecraft:tripwire_hook",
+                            "functions": [
+                                {
+                                    "function": "set_count",
+                                    "count": 1.0
+                                },
+                                {
+                                    "function": "set_nbt",
+                                    "tag": "{display:{Name:'{\"text\":\"Heavy Door Key\",\"italic\":false}'},heavyDoorKey:1b}"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:emerald"
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "minecraft:killed_by_player"
+                },
+                {
+                    "condition": "minecraft:random_chance_with_looting",
+                    "chance": 0.05,
+                    "looting_multiplier": 0.01
+                }
+            ]
+        }
+    ]
+}

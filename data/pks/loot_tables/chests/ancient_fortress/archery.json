@@ -1,0 +1,114 @@
+{
+    "type": "chest",
+    "pools": [
+        {
+            "rolls": 1.0,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:arrow",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 4.0,
+                                "max": 8.0,
+                                "type": "minecraft:uniform"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1.0,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:tipped_arrow",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 2.0,
+                                "max": 6.0,
+                                "type": "minecraft:uniform"
+                            }
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Potion:\"minecraft:slowness\"}"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1.0,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 60,
+                    "name": "minecraft:bow",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1.0
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 30,
+                    "name": "minecraft:bow",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1.0
+                        },
+                        {
+                            "function": "minecraft:enchant_with_levels",
+                            "levels": 20.0,
+                            "treasure": true
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 10,
+                    "name": "minecraft:bow",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1.0
+                        },
+                        {
+                            "function": "minecraft:enchant_with_levels",
+                            "levels": 30.0,
+                            "treasure": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "min": 0.0,
+                "max": 1.0,
+                "type": "minecraft:uniform"
+            },
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:bow",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1.0
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -2,6 +2,7 @@
     "values": [
         "pkt:base/load",
         "pkg:base/load",
-        "pki:base/load"
+        "pki:base/load",
+        "pks:base/load"
     ]
 }

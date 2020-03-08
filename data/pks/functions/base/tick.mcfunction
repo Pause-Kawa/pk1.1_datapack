@@ -1,0 +1,2 @@
+execute as @e[type=area_effect_cloud,tag=PKS_trigger] at @s run function pks:triggers/dispatch_triggers
+execute as @e[type=area_effect_cloud,tag=PKS_loader] at @s run function pks:loaders/dispatch_loaders

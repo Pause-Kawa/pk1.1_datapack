@@ -1,0 +1,65 @@
+{
+    "type": "chest",
+    "pools": [
+        {
+            "rolls": 1.0,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:firework_rocket",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 4.0,
+                                "max": 12.0,
+                                "type": "minecraft:uniform"
+                            }
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Fireworks:{Flight:2b,Explosions:[{Type:2,Flicker:1b,Trail:1b,Colors:[I;16777215]}]}}"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "min": 0.0,
+                "max": 2.0,
+                "type": "minecraft:uniform"
+            },
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:gunpowder",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 2.0,
+                                "max": 4.0,
+                                "type": "minecraft:uniform"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:paper",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1.0,
+                                "max": 3.0,
+                                "type": "minecraft:uniform"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

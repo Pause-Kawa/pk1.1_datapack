@@ -1,0 +1,3 @@
+give @p minecraft:leather_boots{display:{Name:'{"text":"Spring Boots","color":"yellow","italic":false}',Lore:['{"text":"Sneak then jump to jump higher.","color":"dark_purple","italic":false}','{"text":"Sneak more than two seconds","color":"dark_purple","italic":false}','{"text":"to make a Super jump !","color":"dark_purple","italic":false}']},springBoots:1b} 1
+
+execute align xyz run summon minecraft:area_effect_cloud ~0.1 ~0.1 ~0.1 {Tags:["PKS_loader","PKS_engine","jungle_pillar","model_one"],Age:-2147483648,Duration:-1,WaitTime:-2147483648}
