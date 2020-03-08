@@ -1,0 +1,1 @@
+execute if block ~ ~ ~ minecraft:dispenser{Items:[{id:"minecraft:tripwire_hook",tag:{heavyDoorKey:1b}}]} run function pk_structures:structures/jungle_temple/heavy_door/open

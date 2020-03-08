@@ -1,0 +1,2 @@
+execute if entity @s[tag=!handle_bow] at @s if entity @p[distance=5..] run function pks:entities/serpentins/guardian_give_bow
+execute if entity @s[tag=handle_bow] at @s if entity @p[distance=..5] run function pks:entities/serpentins/guardian_give_sword
